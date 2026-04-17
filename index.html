@@ -27,7 +27,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 40px 60px;
+            padding: 50px 80px;
             text-align: center;
             position: relative;
         }
@@ -38,36 +38,36 @@
 
         h1 {
             font-family: 'Syne', sans-serif;
-            font-size: 5rem;
+            font-size: 4.5rem;
             font-weight: 700;
-            margin-bottom: 0.2em;
+            margin-bottom: 0.3em;
             color: #fff;
             letter-spacing: -0.02em;
         }
 
         h2 {
             font-family: 'Syne', sans-serif;
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 0.4em;
+            margin-bottom: 0.5em;
             color: #e8e8e8;
             letter-spacing: -0.02em;
         }
 
         .subtitle {
             font-family: 'Syne', sans-serif;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #999;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-bottom: 1em;
+            margin-bottom: 0.8em;
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: #ccc;
-            max-width: 90vw;
-            margin: 0.8em auto;
+            margin: 0.6em auto;
+            line-height: 1.6;
         }
 
         .accent {
@@ -75,20 +75,20 @@
             font-weight: 600;
         }
 
-        .hook-statement {
-            font-size: 2.8rem;
+        .hook-text {
+            font-size: 2.4rem;
             font-style: italic;
             color: #e0e0e0;
-            margin: 2em 0;
-            max-width: 90vw;
+            margin: 1.5em 0;
             line-height: 1.5;
             font-weight: 500;
+            max-width: 85vw;
         }
 
         .pause-note {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: #666;
-            margin-top: 3em;
+            margin-top: 2em;
             font-family: 'Syne', sans-serif;
             letter-spacing: 0.05em;
             text-transform: uppercase;
@@ -97,9 +97,9 @@
         .passage-box {
             background: rgba(255, 255, 255, 0.04);
             border: 2px solid #444;
-            padding: 3em;
-            max-width: 1000px;
-            margin: 2em auto;
+            padding: 2.5em;
+            max-width: 900px;
+            margin: 1.5em auto;
             border-radius: 4px;
             position: relative;
         }
@@ -107,16 +107,16 @@
         .passage-box::before {
             content: '"';
             position: absolute;
-            top: -30px;
-            left: 30px;
-            font-size: 6rem;
+            top: -25px;
+            left: 20px;
+            font-size: 5rem;
             color: #c09a3a;
             opacity: 0.3;
         }
 
         .passage-text {
-            font-size: 1.4rem;
-            line-height: 1.8;
+            font-size: 1.25rem;
+            line-height: 1.7;
             color: #d0d0d0;
             margin: 0;
         }
@@ -124,64 +124,76 @@
         .question-box {
             background: rgba(192, 154, 58, 0.12);
             border: 3px solid #c09a3a;
-            padding: 2.5em;
-            max-width: 1000px;
-            margin: 2em auto;
+            padding: 2em;
+            max-width: 900px;
+            margin: 1.5em auto;
             border-radius: 4px;
         }
 
         .q-label {
             font-family: 'Syne', sans-serif;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: #c09a3a;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 0.8em;
+            margin-bottom: 0.6em;
         }
 
         .question-text {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: #e0e0e0;
-            line-height: 1.7;
+            line-height: 1.6;
             margin: 0;
         }
 
         .lexis-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.8em;
-            max-width: 1400px;
-            margin: 2em auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2em;
+            max-width: 1200px;
+            margin: 1.5em auto;
+        }
+
+        @media (max-width: 1100px) {
+            .lexis-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .lexis-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .lex-card {
             background: rgba(192, 154, 58, 0.1);
             border: 2px solid #c09a3a;
-            padding: 1.5em;
+            padding: 1.2em;
             text-align: left;
         }
 
         .lex-word {
             font-family: 'Syne', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: #c09a3a;
             font-weight: 700;
             margin-bottom: 0.3em;
         }
 
         .lex-def {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #bbb;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         .statement-box {
             background: rgba(255, 255, 255, 0.04);
             border: 3px solid #666;
-            padding: 3em;
-            max-width: 1200px;
-            margin: 2em auto;
+            padding: 2.5em;
+            max-width: 1000px;
+            margin: 1.5em auto;
             border-radius: 4px;
         }
 
@@ -192,51 +204,52 @@
 
         .statement-num {
             font-family: 'Syne', sans-serif;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             color: #c09a3a;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-bottom: 1em;
+            margin-bottom: 0.8em;
         }
 
         .statement-text {
-            font-size: 1.75rem;
+            font-size: 1.6rem;
             color: #e0e0e0;
-            line-height: 1.8;
+            line-height: 1.7;
             margin: 0;
         }
 
         .discuss-prompt {
-            margin-top: 2.5em;
+            margin-top: 1.8em;
             background: rgba(192, 154, 58, 0.15);
             border: 2px solid #c09a3a;
-            padding: 1.8em;
+            padding: 1.4em;
             border-radius: 4px;
         }
 
         .prompt-text {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #c09a3a;
-            margin: 0 0 0.8em 0;
+            margin: 0 0 0.6em 0;
+            font-weight: 500;
         }
 
         .timer-text {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #999;
         }
 
-        .observation {
-            background: rgba(255, 255, 255, 0.08);
-            border: 2px solid #999;
+        .confrontation-box {
+            background: rgba(255, 255, 255, 0.06);
+            border: 3px solid #c09a3a;
             padding: 2.5em;
             max-width: 1000px;
-            margin: 2em auto;
+            margin: 1.5em auto;
             border-radius: 4px;
         }
 
-        .observation-text {
+        .confrontation-text {
             font-size: 1.5rem;
-            color: #d0d0d0;
+            color: #e0e0e0;
             line-height: 1.7;
             margin: 0;
         }
@@ -244,16 +257,16 @@
         .exit-prompt {
             background: rgba(192, 154, 58, 0.15);
             border: 2px solid #c09a3a;
-            padding: 2.5em;
-            max-width: 1000px;
-            margin: 2em auto;
+            padding: 2em;
+            max-width: 900px;
+            margin: 1.5em auto;
             border-radius: 4px;
         }
 
         .exit-text {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #e0e0e0;
-            line-height: 1.7;
+            line-height: 1.6;
             margin: 0;
         }
 
@@ -268,13 +281,13 @@
         }
 
         .nav-btn {
-            padding: 0.8em 1.5em;
+            padding: 0.7em 1.3em;
             background: #c09a3a;
             color: #0a0a0a;
             border: none;
             font-family: 'Syne', sans-serif;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             cursor: pointer;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -294,9 +307,9 @@
         .nav-counter {
             position: fixed;
             top: 30px;
-            right: 30px;
+            right: 40px;
             font-family: 'Syne', sans-serif;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #999;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -305,9 +318,9 @@
         .keys-hint {
             position: fixed;
             top: 30px;
-            left: 30px;
+            left: 40px;
             font-family: 'Syne', sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #666;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -315,171 +328,152 @@
 
         #s1 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1515 100%); }
         #s2 { background: linear-gradient(135deg, #0a0a0a 0%, #15110f 100%); }
-        #s3 { background: #0a0a0a; }
-        #s4 { background: #0a0a0a; }
-        #s5 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1515 100%); }
-        #s6, #s7, #s8, #s9 { background: #0a0a0a; }
-        #s10 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1515 100%); }
+        #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10 { background: #0a0a0a; }
+        #s11 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1515 100%); }
     </style>
 </head>
 <body>
 
-    <!-- S1: Cold hook — destabilising -->
+    <!-- S1: Hook — normalisation angle -->
     <div id="s1" class="screen active">
-        <div class="hook-statement">Someone in this room could access your phone data right now.</div>
-        <p class="pause-note">Let that sit.</p>
+        <div class="hook-text">You're fine with being watched.<br/>You proved it when you walked in with your phone.</div>
+        <p class="pause-note">Why is that?</p>
     </div>
 
-    <!-- S2: The passage — where thinking actually happens -->
+    <!-- S2: The passage -->
     <div id="s2" class="screen">
         <h2>The shift</h2>
-        <p class="subtitle">Read this carefully.</p>
         <div class="passage-box">
-            <p class="passage-text">Surveillance isn't new. What's new is the <span class="accent">asymmetry</span>. A CCTV camera in 1995 recorded a street. A smartphone in 2026 records you, your contacts, your location, your heart rate, and who you texted at 3 a.m. — and sends it to a company you've never met, under a contract you didn't read. The question isn't whether you're being watched. It's <span class="accent">who benefits from watching you, and whether you can ever see them back.</span></p>
+            <p class="passage-text">Surveillance isn't new. A CCTV camera in 1995 recorded a street. Today, your phone records you, your contacts, your location, your heart rate, who you texted at 3 a.m. — and sends it to a company you've never met. The question isn't whether you're watched. It's <span class="accent">who benefits, and whether you can ever see them back.</span></p>
         </div>
-        <p class="pause-note">Breathe.</p>
     </div>
 
     <!-- S3: Comprehension -->
     <div id="s3" class="screen">
         <h2>Question 1</h2>
-        <p class="subtitle">Comprehension</p>
         <div class="question-box">
-            <p class="question-text">What does <span class="accent">"asymmetry"</span> mean here?</p>
+            <p class="question-text">Who has power here? The company or you?</p>
         </div>
-        <p style="margin-top: 3em; color: #666; font-size: 1.1rem;"><em>Talk to your partner.</em></p>
+        <p style="margin-top: 2em; color: #666; font-size: 1rem;"><em>Discuss with your partner.</em></p>
     </div>
 
     <!-- S4: Inference -->
     <div id="s4" class="screen">
         <h2>Question 2</h2>
-        <p class="subtitle">Inference</p>
         <div class="question-box">
-            <p class="question-text">Why is the final sentence the most dangerous?</p>
+            <p class="question-text">What does "see them back" mean?</p>
         </div>
-        <p style="margin-top: 3em; color: #666; font-size: 1.1rem;"><em>This is the core question.</em></p>
+        <p style="margin-top: 2em; color: #666; font-size: 1rem;"><em>Why is that important?</em></p>
     </div>
 
-    <!-- S5: Vocabulary emerges from confusion -->
+    <!-- S5: Vocabulary (tight, visceral) -->
     <div id="s5" class="screen">
         <h2>Language</h2>
-        <p class="subtitle">Words that matter now</p>
         <div class="lexis-grid">
             <div class="lex-card">
                 <div class="lex-word">profiling</div>
-                <div class="lex-def">Building a detailed picture of who you are based on your data. Not random — targeted.</div>
+                <div class="lex-def">Building a detailed picture of who you are. For profit.</div>
             </div>
             <div class="lex-card">
                 <div class="lex-word">tracking</div>
-                <div class="lex-def">Following someone continuously. Where they go, what they do, when they do it.</div>
+                <div class="lex-def">Following you continuously. Where. When. Why.</div>
             </div>
             <div class="lex-card">
-                <div class="lex-word">data harvesting</div>
-                <div class="lex-def">Collecting your information systematically. Not asking. Just taking.</div>
+                <div class="lex-word">harvesting</div>
+                <div class="lex-def">Collecting data. Not asking. Just taking.</div>
             </div>
             <div class="lex-card">
                 <div class="lex-word">asymmetry</div>
-                <div class="lex-def">Imbalance. One side has power; the other doesn't. You watch Netflix. Netflix watches you.</div>
+                <div class="lex-def">Imbalance of power. You watch Netflix. Netflix watches you.</div>
             </div>
             <div class="lex-card">
                 <div class="lex-word">consent</div>
-                <div class="lex-def">Agreement. Real consent means you understand what you're agreeing to. Clicking "I agree" isn't consent.</div>
+                <div class="lex-def">Real agreement. Clicking "I agree" without reading isn't consent.</div>
             </div>
             <div class="lex-card">
-                <div class="lex-word">a chilling effect</div>
-                <div class="lex-def">When you know you're being watched, you stop speaking freely. Fear shapes behaviour.</div>
+                <div class="lex-word">chilling effect</div>
+                <div class="lex-def">Being watched stops you from speaking. Fear changes behaviour.</div>
             </div>
         </div>
     </div>
 
     <!-- S6: Discussion intro -->
     <div id="s6" class="screen">
-        <h2>Discuss</h2>
-        <p class="subtitle">Now we complicate it.</p>
-        <p style="margin-top: 3em; color: #999; font-size: 1.3rem;">Your answers matter. Your position may be reviewed.</p>
+        <h2>Now complicate it</h2>
+        <p style="margin-top: 2em; color: #999; font-size: 1.25rem;">Your answer matters. Your choice matters.</p>
     </div>
 
     <!-- S7: Statement 1 -->
     <div id="s7" class="screen">
-        <p class="subtitle">Statement 1 of 4</p>
+        <p class="subtitle">1 of 4</p>
         <div class="statement-box active">
-            <div class="statement-num">Statement 1</div>
-            <p class="statement-text">Private companies should have more access to your data than governments.</p>
+            <p class="statement-text">Your school should monitor your social media.</p>
         </div>
         <div class="discuss-prompt">
-            <p class="prompt-text">Is this true where you live? Should it be?</p>
+            <p class="prompt-text">For what? In whose interest?</p>
             <p class="timer-text">2 minutes.</p>
         </div>
     </div>
 
     <!-- S8: Statement 2 -->
     <div id="s8" class="screen">
-        <p class="subtitle">Statement 2 of 4</p>
+        <p class="subtitle">2 of 4</p>
         <div class="statement-box active">
-            <div class="statement-num">Statement 2</div>
-            <p class="statement-text">A government that watches everyone equally is fairer than one that watches selectively.</p>
+            <p class="statement-text">Governments should watch everyone equally.</p>
         </div>
         <div class="discuss-prompt">
-            <p class="prompt-text">Does "equal" = "fair"? Who benefits from each approach?</p>
+            <p class="prompt-text">Does equal = fair? Who benefits?</p>
             <p class="timer-text">2 minutes.</p>
         </div>
     </div>
 
     <!-- S9: Statement 3 -->
     <div id="s9" class="screen">
-        <p class="subtitle">Statement 3 of 4</p>
+        <p class="subtitle">3 of 4</p>
         <div class="statement-box active">
-            <div class="statement-num">Statement 3</div>
-            <p class="statement-text">If you choose to use free software, you've implicitly consented to having your data used.</p>
+            <p class="statement-text">If you use a free app, your data is the price.</p>
         </div>
         <div class="discuss-prompt">
-            <p class="prompt-text">Is clicking "agree" real consent? What would true consent look like?</p>
+            <p class="prompt-text">Is that fair? Did you really choose?</p>
             <p class="timer-text">2 minutes.</p>
         </div>
     </div>
 
     <!-- S10: Statement 4 -->
     <div id="s10" class="screen">
-        <p class="subtitle">Statement 4 of 4</p>
+        <p class="subtitle">4 of 4</p>
         <div class="statement-box active">
-            <div class="statement-num">Statement 4</div>
-            <p class="statement-text">Being watched changes how you behave — and that's a form of harm.</p>
+            <p class="statement-text">Being watched changes how you think and speak.</p>
         </div>
         <div class="discuss-prompt">
-            <p class="prompt-text">Is changed behaviour itself harm? Or only if the change is unjust?</p>
+            <p class="prompt-text">Is that harm? Or just adaptation?</p>
             <p class="timer-text">2 minutes.</p>
         </div>
     </div>
 
-    <!-- S11: The observation (behavioural pressure) -->
+    <!-- S11: The confrontation -->
     <div id="s11" class="screen">
-        <h2>Notice something</h2>
-        <div class="observation">
-            <p class="observation-text">Several of you shifted how you were speaking between statement 1 and statement 4. You became more careful. Why?</p>
+        <h2>You already know this</h2>
+        <div class="confrontation-box">
+            <p class="confrontation-text">You don't post certain things because you know people will see. You don't text certain words. You curate yourself. That's surveillance working. Not on your phone — in your head.</p>
         </div>
-        <p style="margin-top: 2em; color: #666; font-size: 1.1rem;"><em>You felt watched.</em></p>
+        <p style="margin-top: 2em; color: #666; font-size: 1rem;"><em>You're not the exception.</em></p>
     </div>
 
-    <!-- S12: Final question -->
+    <!-- S12: Exit ticket -->
     <div id="s12" class="screen">
-        <h2>Who is watching you?</h2>
-        <p style="margin-top: 3em; color: #999; font-size: 1.3rem;"><em>Sit with that.</em></p>
-    </div>
-
-    <!-- S13: Exit ticket -->
-    <div id="s13" class="screen">
         <h2>Exit ticket</h2>
         <p class="subtitle">One sentence.</p>
         <div class="exit-prompt">
-            <p class="exit-text">The most dangerous thing about surveillance isn't that it watches us — it's that <span class="accent">__________</span>.</p>
+            <p class="exit-text">The most dangerous thing about surveillance is that <span class="accent">__________</span>.</p>
         </div>
-        <p style="margin-top: 2em; color: #666; font-size: 1.1rem;"><em>Write this down. Three answers will be read aloud next lesson.</em></p>
+        <p style="margin-top: 1.5em; color: #666; font-size: 1rem;"><em>Write it down.</em></p>
     </div>
 
     <!-- Nav -->
-    <div class="keys-hint">← → or arrow keys</div>
+    <div class="keys-hint">← → keys</div>
     <div class="nav-counter">
-        <span id="current">1</span> / <span id="total">13</span>
+        <span id="current">1</span> / <span id="total">12</span>
     </div>
 
     <div class="nav">
@@ -494,24 +488,15 @@
 
         document.getElementById('total').textContent = totalScreens;
 
-        // Track statement visits for the "observation" effect
-        const statementVisits = new Set();
-
         function showScreen(n) {
             screens.forEach(s => s.classList.remove('active'));
             screens[n].classList.add('active');
             document.getElementById('current').textContent = n + 1;
 
-            // Update button states
             document.getElementById('prev').disabled = (n === 0);
             document.getElementById('next').disabled = (n === totalScreens - 1);
 
-            // Track visits to discussion statements (indices 6, 7, 8, 9)
-            if ([6, 7, 8, 9].includes(n)) {
-                statementVisits.add(n);
-            }
-
-            // Start timer on discussion slides
+            // Start timer on discussion slides (7, 8, 9, 10)
             if ([6, 7, 8, 9].includes(n)) {
                 startTimer(120);
             }
@@ -522,10 +507,10 @@
             const display = document.createElement('div');
             display.style.cssText = `
                 position: fixed;
-                bottom: 120px;
+                bottom: 100px;
                 left: 50%;
                 transform: translateX(-50%);
-                font-size: 2rem;
+                font-size: 1.8rem;
                 color: #c09a3a;
                 font-family: 'Syne', sans-serif;
                 font-weight: 700;
@@ -559,7 +544,6 @@
             }
         }
 
-        // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight') nextScreen();
             if (e.key === 'ArrowLeft') prevScreen();
